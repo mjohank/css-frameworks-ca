@@ -4,6 +4,262 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FlashGrid | Feed</title>
+    <link rel="stylesheet" href="/dist/css/index.css" />
   </head>
-  <body></body>
+
+  <body class="d-flex flex-column justify-content-between min-vh-100">
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#">FlashGrid</a>
+
+            <!-- Create Button -->
+            <button
+              type="button"
+              class="btn btn-primary me-3"
+              data-bs-toggle="modal"
+              data-bs-target="#createPostModal"
+            >
+              Create
+            </button>
+          </div>
+
+          <!-- Mobile Toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Feed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile page/index.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/authentication page/index.html"
+                  >Sign up/log in</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <h1 class="text-center mt-4 mb-4">Feed</h1>
+
+    <div class="container mt-2">
+      <!-- Search Bar -->
+      <div class="row gy-3 mb-1">
+        <div class="col-md-8">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search posts..."
+          />
+        </div>
+
+        <!-- Sort options -->
+        <div class="col-md-4">
+          <select class="form-select">
+            <option selected>Sort by</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="popular">Most popular</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIST OF POSTS -->
+
+    <main class="container mt-5">
+      <div class="row">
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_1.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_2.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_3.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_4.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_5.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_6.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_7.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_8.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_9.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Feed thumbnail -->
+        <div class="col-6 col-lg-3 mb-4">
+          <div class="ratio ratio-1x1">
+            <img
+              src="/resources/feed_posts/feed_10.jpg"
+              alt="post image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL TO CREATE NEW POST -->
+    <div
+      class="modal fade"
+      id="createPostModal"
+      tabindex="-1"
+      aria-labelledby="createPostModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createPostModalLabel">
+              Create New Post
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Form inside the modal -->
+            <form>
+              <div class="mb-3">
+                <label for="postTitle" class="form-label">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="postTitle"
+                  placeholder="Enter post title"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="postDescription" class="form-label"
+                  >Description</label
+                >
+                <textarea
+                  class="form-control"
+                  id="postDescription"
+                  rows="3"
+                  placeholder="Enter description"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="postImage" class="form-label">Upload Image</label>
+                <input class="form-control" type="file" id="postImage" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-secondary text-center">
+      © Copyright FlashGrid 2024
+    </footer>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
