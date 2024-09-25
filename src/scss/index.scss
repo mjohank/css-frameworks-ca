@@ -1,5 +1,13 @@
-@import "./abstracts/variables";
-//
+// ABSTRACTS
+@import "abstracts/variables";
+
+// BASE
+@import "base/reset";
+
+//PAGES
+@import "pages/authentication";
+@import "pages/feed";
+@import "pages/profile";
 
 //
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
