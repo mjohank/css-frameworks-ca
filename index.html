@@ -12,14 +12,14 @@
     <header>
       <nav class="navbar bg-secondary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">FlashGrid</a>
+          <a class="navbar-brand text-dark" href="index.html">FlashGrid</a>
         </div>
       </nav>
     </header>
 
     <!-- MAIN CONTENT -->
     <main
-      class="container-fluid d-flex justify-content-center align-items-center flex-grow-1"
+      class="container-fluid d-flex justify-content-center align-items-center flex-grow-1 mb-4"
     >
       <div class="row">
         <!-- hero image -->
@@ -27,16 +27,15 @@
           <img
             src="resources/auth_hero-img/hero-img.jpg"
             alt="person taking a picture with their mobile phone"
-            class="img-fluid auth-hero-img"
+            class="img-fluid auth-hero-img rounded-2"
           />
         </div>
         <div
-          class="col-12 col-md-6 border d-flex flex-column justify-content-center align-items-center"
+          class="col-12 col-md-6 border border-primary rounded-2 d-flex flex-column justify-content-center align-items-center"
         >
-          <a href="#">FlashGrid</a>
           <!-- log in form -->
-          <form>
-            <h1 class="mb-3 fw-normal">Sign in to your account</h1>
+          <form action="profile-page/index.html">
+            <h1 class="my-4 fw-normal">Sign in to your account</h1>
 
             <div class="form-floating mb-4">
               <input
@@ -44,6 +43,7 @@
                 class="form-control"
                 id="floatingInput"
                 placeholder="name@example.com"
+                required
               />
               <label for="floatingInput">Email address</label>
             </div>
@@ -54,6 +54,8 @@
                 class="form-control"
                 id="floatingPassword"
                 placeholder="Password"
+                minlength="8"
+                required
               />
               <label for="floatingPassword">Password</label>
             </div>
@@ -74,7 +76,7 @@
             </button>
             <p class="mt-5 mb-3 text-body-secondary">
               Don't have an account?
-              <span><a href="feed-page/index.html">Sign in here</a></span>
+              <span><a href="#">Sign in here</a></span>
             </p>
           </form>
         </div>
@@ -82,10 +84,35 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="container-fluid bg-secondary text-center">
+    <footer class="container-fluid bg-secondary text-center py-2 fs-6">
       © Copyright FlashGrid 2024
     </footer>
     <!--  -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Bootstrap form validation script
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission if invalid
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault(); // Prevent form from submitting
+                event.stopPropagation(); // Stop further propagation
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
