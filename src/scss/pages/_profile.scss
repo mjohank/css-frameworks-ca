@@ -1,5 +1,4 @@
 .profile-img {
-  width: 200px;
-  height: 200px;
+  @include image-size(225px, 225px);
   object-fit: cover;
 }
