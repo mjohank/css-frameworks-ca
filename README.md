@@ -2,10 +2,22 @@
 
 1st year semester project: Build a website for a fictional science museum
 
-## Description
+## Description - Assignment brief:
 
-The assignment was to create a website for a fictional science museum, aimed primarily at school children ages 7-15 and families with children.
-The website was required to be informative, appealing and engaging whilst maintaining focus on responsive design and adhering to accessibility guidelines.
+You are tasked with creating 3 pages in HTML using Bootstrap and SASS:
+
+Authentication page (/index.html)
+Feed Page (/feed/index.html)
+Profile page (/profile/index.html)
+The authentication page should have a form to login or register to the application. Ensure to include HTML form validation and use /profile as the action attribute. Password must have a minimum length of 8 characters.
+
+The feed page should have a list of posts thumbnails, a search bar, sort options and a form to create a new post. You may add additional design features beyond these requirements.
+
+The profile page should have a profile image, username, list of user posts, follow button and an area to display following/followers.
+
+There is no requirment for JS functionality beyond Bootstrap UX behaviour. For example, using the provided dropdowns, tabs or carousel is acceptable but there is no further requirement for custom JS.
+
+Submission for this project will follow the pattern used in professional development. You are expected to seek feedback from your peers to complete this assignment. When requesting feedback it is useful to ask for a specific area to be reviewed in order to get the most out of your feedback.
 
 **The site consists of the following pages:**
 
