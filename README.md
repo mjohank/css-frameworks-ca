@@ -1,6 +1,7 @@
 # FlashGrid - css-frameworks-ca
 
-[![CSM Homepage Screenshot](https://github.com/mjohank/resources/readme-img/flashgrid-readme-img.jpg)](https://flashgrid-ca.netlify.app/)
+[![FlashGrid Screenshot](https://github.com/mjohank/resources/readme-img/flashgrid-readme-img.jpg)](https://flashgrid-ca.netlify.app/)
+
 Goal: To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
 
 ## Description - Assignment brief:
