@@ -34,9 +34,14 @@
           class="col-12 col-md-6 border border-primary rounded-2 d-flex flex-column justify-content-center align-items-center"
         >
           <!-- log in form -->
-          <form action="profile-page/index.html">
+          <form
+            action="profile-page/index.html"
+            class="needs-validation"
+            novalidate
+          >
             <h1 class="my-4 fw-normal">Sign in to your account</h1>
 
+            <!-- Form email -->
             <div class="form-floating mb-4">
               <input
                 type="email"
@@ -46,8 +51,17 @@
                 required
               />
               <label for="floatingInput">Email address</label>
+
+              <!-- Email Valid feedback -->
+              <div class="valid-feedback">Email looks good!</div>
+
+              <!-- Email invalid feedback -->
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
             </div>
 
+            <!-- Form password -->
             <div class="form-floating">
               <input
                 type="password"
@@ -58,6 +72,14 @@
                 required
               />
               <label for="floatingPassword">Password</label>
+
+              <!-- Password Valid feedback -->
+              <div class="valid-feedback">Password looks good!</div>
+
+              <!-- Password invalid feedback -->
+              <div class="invalid-feedback">
+                Please enter at least 8 characters
+              </div>
             </div>
 
             <div class="form-check text-start my-3">
@@ -94,5 +116,33 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Custom Bootstrap form validation
+      (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              // Check if the form is valid
+              if (!form.checkValidity()) {
+                // If not valid, prevent form submission
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              // Add Bootstrap's 'was-validated' class to show validation feedback
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
   </body>
 </html>
