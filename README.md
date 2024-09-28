@@ -1,6 +1,8 @@
 # FlashGrid - css-frameworks-ca
 
-1st year semester project: Build a website for a fictional science museum
+<img src="resources/readme-img/flashgrid-readme-img.jpg">
+
+Goal: To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
 
 ## Description - Assignment brief:
 
